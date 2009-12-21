@@ -23,8 +23,7 @@ sub PCI_unregister {
 
 sub S_chan_mode {
     my ($self, $irc, $nickstr, $channel, $mode, $mask) = @_;
-    warn
-        Data::Dumper->Dumper($irc->channel_ban_list($$channel));
+    warn Data::Dumper->Dumper($irc->channel_ban_list($$channel));
     return PCI_EAT_NONE;
 }
 
