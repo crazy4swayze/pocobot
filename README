@@ -8,7 +8,7 @@ works as expected.  When executing
     /mode #moses bb one!*@* two!*@*
 
 from my IRC client, irc_chan_mode returns once for each ban and on both occassions
-channel_ban_list('#moses') returns the expected output.
+channel_ban_list('#moses') returns the expected output, i.e. 2 entries.
 
 However, in the non POE::Component::IRC::Plugin version of the bot,
 irc_chan_mode again returns once for each ban as expected, but the first time
