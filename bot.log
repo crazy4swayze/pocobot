@@ -1,0 +1,9 @@
+$VAR1 = 'Data::Dumper';
+$VAR2 = {};
+$VAR1 = 'Data::Dumper';
+$VAR2 = {
+          'one!*@*' => {
+                         'SetAt' => 1261357883,
+                         'SetBy' => 'go|dfish!goldfish@Redbrick.dcu.ie'
+                       }
+        };
