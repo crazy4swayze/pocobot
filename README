@@ -1,5 +1,5 @@
 I'm getting unexpected results with POE::Component::IRC::State's
-irc_chan_mode and channel_ban_list when used with a
+irc_chan_mode and channel_ban_list when used with
 POE::Component::IRC::Plugin.
 
 The bot_noplugin version which doesn't use POE::Component::IRC::Plugin
