@@ -7,10 +7,10 @@ works as expected.  When executing
 
     /mode #moses bb one!*@* two!*@*
 
-irc_chan_mode returns for both bans and on both occassions
+from my IRC client, irc_chan_mode returns once for each ban and on both occassions
 channel_ban_list('#moses') returns the expected output.
 
 However, in the non POE::Component::IRC::Plugin version of the bot,
-irc_chan_mode returns for both bans as expected, but the first time
+irc_chan_mode again returns once for each ban as expected, but the first time
 channel_ban_list('#moses') returns no entries and the second time it
-returns just one entry.
+returns just one entry. 
