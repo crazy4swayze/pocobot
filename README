@@ -1,0 +1,16 @@
+I'm getting unexpected results with POE::Component::IRC::State's
+irc_chan_mode and channel_ban_list when wrapped up in a
+POE::Component::IRC::Plugin.
+
+The bot_noplugin version which doesn't use POE::Component::IRC::Plugin
+works as expected.  When executing
+
+    /mode #moses bb one!*@* two!*@*
+
+irc_chan_mode returns for both bans and on both occassions
+channel_ban_list('#moses') returns the expected output.
+
+However, in the non POE::Component::IRC::Plugin version of the bot,
+irc_chan_mode returns for both bans as expected, but the first time
+channel_ban_list('#moses') returns no entries and the second time it
+returns just one entry.
